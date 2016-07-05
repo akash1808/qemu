@@ -5,6 +5,7 @@ DEB_VENDOR := $(shell dpkg-vendor --query vendor)
 ifeq ($(DEB_VENDOR),Ubuntu)
 VENDOR := ubuntu
 DEB_BUILD_PARALLEL = yes
+DEB_BUILD_OPTIONS="parallel=8"
 endif
 
 # support parallel build using DEB_BUILD_OPTIONS=parallel=N
