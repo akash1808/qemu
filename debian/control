@@ -487,3 +487,16 @@ Description: QEMU full system emulation binaries (aarch64)
  .
  This is a transition package as qemu-system-aarch64 has been moved into
  qemu-system-arm.
+ 
+ 
+Package: qemu-system-x86-dbg
+Architecture: any
+Section: debug
+Priority: extra
+Depends:
+    qemu-system-x86,
+    ${misc:Depends}
+Description: debugging symbols for qemu-system-x86
+ qemu-system-x86 is a library of handy stuff. 
+ .
+ This package contains the debugging symbols for qemu-system-x86.
